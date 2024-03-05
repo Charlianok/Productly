@@ -1,5 +1,35 @@
 .contact-us {
   background-color: $color-background;
+  padding: 62px 82px;
+}
+
+.contact-us__title {
+  margin: 0 0 17px;
+}
+
+.contact-us__content {
+  max-width: 520px;
+}
+
+.contact-us__text {
+  margin: 0 0 34px;
+}
+
+.contact-us__link {
+  margin: 0 0 19px;
+  display: flex;
+  align-items: center;
+  @include font($size: 2.5rem, $height: 2.6rem, $weight: normal);
+  a {
+    margin-left: 11px;
+    color: $color-text;
+    text-decoration: none;
+  }
+  &:hover {
+    a {
+      text-decoration: underline;
+    }
+  }
 }
 
 .contact-us__form {

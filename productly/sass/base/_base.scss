@@ -17,12 +17,10 @@ h1 {
 }
 
 h2 {
-  @include font(34px, 46px);
   @include font($size: 3.4rem, $height: 4.6rem);
 }
 
 h3 {
-  @include font(24px, 34px);
   @include font($size: 2.4rem, $height: 3.4rem);
 }
 

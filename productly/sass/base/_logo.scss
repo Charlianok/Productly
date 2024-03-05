@@ -4,10 +4,9 @@
 
 .logo-svg {
   cursor: pointer;
-}
-
-.logo-svg:hover {
-  .logo-path {
-    fill: $color-primary;
+  &:hover {
+    .logo-path {
+      fill: $color-primary;
+    }
   }
 }

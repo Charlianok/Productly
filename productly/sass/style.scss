@@ -1,6 +1,7 @@
 @import "../node_modules/normalize-scss/sass/normalize";
 @include normalize();
 
+// Abstracts
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/placeholders";
@@ -16,10 +17,12 @@
 @import "layout/wrapper";
 @import "layout/header";
 @import "layout/columns";
+@import "layout/footer";
 
 // Components
-@import "components/promo";
-@import "components/contact-us";
 @import "components/navigation";
+@import "components/promo";
 @import "components/_tools";
 @import "components/strategies";
+@import "components/about-us";
+@import "components/contact-us";
