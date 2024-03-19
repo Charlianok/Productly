@@ -324,7 +324,7 @@ template {
   display: none;
 }
 
-.navigation__link, .logo-path, .link-button, .button {
+.navigation__link, .footer__navigation__links a, .logo-path, .link-button, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -332,7 +332,7 @@ template {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
-.promo__text, .link-button, h1 {
+.promo__text, .footer__navigation__links, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -389,6 +389,10 @@ h5 {
 .block-shadowed {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+}
+
+li {
+  list-style: none;
 }
 
 .button {
@@ -612,6 +616,30 @@ h5 {
   display: flex;
 }
 
+.footer-navigation {
+  flex-grow: 1;
+  margin-left: 152px;
+}
+
+.footer-navigation__title {
+  margin-bottom: 0 0 15px;
+}
+
+.footer__navigation__links {
+  padding-left: 0;
+}
+.footer__navigation__links a {
+  color: #544837;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 3.5rem;
+  text-decoration: none;
+}
+.footer__navigation__links a:hover {
+  color: #FF9900;
+}
+
 .navigation {
   display: flex;
   font-size: 1.5rem;
@@ -619,7 +647,6 @@ h5 {
 }
 
 .navigation__item {
-  list-style: none;
   padding: 0 10px;
 }
 
@@ -735,8 +762,53 @@ h5 {
   margin: 0 0 14px;
 }
 
+.about-us__description {
+  margin: 0 0 45px;
+}
+
+.employee__container {
+  padding-right: 32px;
+}
+
 .employee {
   display: flex;
+  padding: 35px;
+  position: relative;
+  width: calc(30% - 32px);
+}
+
+.employee__name {
+  margin: 0;
+}
+
+.employee__title {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4rem;
+  margin: 0;
+}
+
+.employee__contact {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4rem;
+  color: #1943EF;
+  text-decoration: none;
+}
+.employee__contact:hover {
+  text-decoration: underline;
+}
+
+.employee__photo {
+  height: 98px;
+  width: 98px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: -32px;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
 }
 
 .contact-us {
