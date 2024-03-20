@@ -8,6 +8,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include media-tablet {
+    padding-left: 24px;
+  }
+}
+
+.header__logo-line {
+  display: flex;
+  align-items: center;
 }
 
 .header__buttons {
@@ -17,6 +25,9 @@
       margin-left: 14px;
       margin-left: 0;
     }
+  }
+  @include media-mobile {
+    display: none;
   }
 }
 

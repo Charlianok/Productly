@@ -1,5 +1,8 @@
 .strategies {
   padding: 30px 0;
+  @include media-tablet {
+
+  }
 }
 
 .strategies__title {
@@ -12,23 +15,48 @@
 
 .strategies__tags {
   margin-bottom: 31px;
-}
-
-// Strategy
-.strategy {
-  cursor: pointer;
-}
-
-.strategy__wrapper {
-  >* {
-    margin-bottom: 30px;
+  @include media-tablet {
+    justify-content: center;
   }
 }
 
+// Strategy
+.strategy__wrapper {
+  >* {
+    margin-bottom: 30px;
+    @include media-tablet {
+      flex-basis: 48%;
+    }
+    @include media-mobile {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.strategy {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  &:hover .strategy__name {
+    color: $color-primary;
+    @extend %transition;
+  }
+  @include media-tablet {
+    overflow: hidden;
+  }
+}
+
+
+
 .strategy__content {
   padding: 24px 33px 26px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .strategy__name {
   margin: 0 0 29px;
+  text-align: center;
+  flex-grow: 1;
 }
