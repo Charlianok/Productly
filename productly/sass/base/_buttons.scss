@@ -1,6 +1,5 @@
 .button {
-  @extend %font-prim;
-  padding: 12px 25px;
+  @extend %font-prim;  
   font-style: normal;
   font-weight: 600;
   font-size: 1.6rem;
@@ -26,11 +25,24 @@
       border-color: $color-additional;
     }
   }
+  &_header {
+    padding: 12px 25px;
+  }
+  &_promo {
+    padding: 15px 40px;
+  }
+  &_tool {
+    padding: 15px 40px;
+  }
+  &_contact-us {
+    padding: 15px 25px;
+  }
 }
 
 .link-button {
   color: $color-primary;
   @extend %font-add;
+  @include font($size: 1.6rem, $height: 2.4rem, $weight: 600);
   display: inline-flex;
   align-items: center;
   @extend %transition;

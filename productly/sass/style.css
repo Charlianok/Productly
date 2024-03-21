@@ -338,6 +338,8 @@ template {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -428,7 +430,6 @@ li {
 }
 
 .button {
-  padding: 12px 25px;
   font-style: normal;
   font-weight: 600;
   font-size: 1.6rem;
@@ -454,9 +455,25 @@ li {
   background-color: #FF7549;
   border-color: #FF7549;
 }
+.button_header {
+  padding: 12px 25px;
+}
+.button_promo {
+  padding: 15px 40px;
+}
+.button_tool {
+  padding: 15px 40px;
+}
+.button_contact-us {
+  padding: 15px 25px;
+}
 
 .link-button {
   color: #FF9900;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.4rem;
   display: inline-flex;
   align-items: center;
 }
@@ -476,7 +493,7 @@ li {
 }
 
 .logo-object {
-  width: 160px;
+  width: 190px;
   height: 30px;
 }
 
@@ -647,7 +664,7 @@ li {
 .header {
   background: #FFFFFF;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
-  padding: 15px 0;
+  padding: 16px 0;
 }
 
 .header__wrapper {
@@ -686,17 +703,12 @@ li {
   margin-left: 14px;
 }
 .header__buttons > .button:first-child {
-  margin-left: 14px;
   margin-left: 0;
 }
 @media (max-width: 375px) {
   .header__buttons {
     display: none;
   }
-}
-
-.header__buttons > .button:first-child {
-  margin-left: 0;
 }
 
 .layout-4-column {
@@ -727,7 +739,7 @@ li {
 }
 
 .footer {
-  padding: 60px 0 70px;
+  padding: 58px 0 52px;
 }
 @media (max-width: 375px) {
   .footer {
@@ -817,7 +829,7 @@ li {
 }
 
 .promo__content {
-  margin-right: 65px;
+  padding-right: 65px;
 }
 @media (max-width: 768px) {
   .promo__content {
@@ -881,6 +893,10 @@ li {
     max-width: 100%;
     margin-bottom: 16px;
   }
+}
+
+.tools {
+  padding: 80px 0 0;
 }
 
 .tools__wrapper {
@@ -1014,7 +1030,7 @@ li {
 }
 
 .about-us {
-  padding: 30px 0 100px 0;
+  padding: 66px 0 100px;
 }
 
 .about-us__title {
@@ -1072,7 +1088,7 @@ li {
 
 .contact-us {
   background-color: #FFEEE1;
-  padding: 62px 0;
+  padding: 62px 0 82px;
 }
 @media (max-width: 768px) {
   .contact-us {
