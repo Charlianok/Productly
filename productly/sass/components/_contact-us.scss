@@ -40,12 +40,11 @@
     margin-left: 11px;
     color: $color-text;
     text-decoration: none;
-  }
-  &:hover {
-    a {
+    &:hover {
       text-decoration: underline;
     }
   }
+
 }
 
 .contact-us__form {
@@ -57,6 +56,10 @@
     &:focus {
       border-color: $color-red;
       outline: none;
+      background-color: $color-form-focus;
+      &::placeholder {
+        color: $color-red;
+      }
     }
   }
   textarea {

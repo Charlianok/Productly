@@ -25,11 +25,10 @@
 }
 
 .footer-navigation__title {
-  margin-bottom: 0 0 15px;
+  margin: 0 0 15px;
 }
 
 .footer__navigation__links {
-  padding-left: 0;
   @extend %font-add;
   a {
     color: $color-text;

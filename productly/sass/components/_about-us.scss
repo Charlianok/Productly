@@ -42,11 +42,11 @@ $image-gap: 32px;
 }
 
 .employee__photo {
-  height: 98px;
   width: 98px;
+  height: 98px;
   border-radius: 50%;
   position: absolute;
-  top: 20px;
   right: -$image-gap;
+  top: 20px;
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
 }
