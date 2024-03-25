@@ -340,6 +340,7 @@ template {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -543,7 +544,7 @@ li {
 }
 
 .ico_play {
-  background-image: url("../img/icons/play.svg");
+  background-image: url("../../img/icons/play.svg");
   width: 18px;
   height: 19px;
 }
