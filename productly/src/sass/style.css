@@ -494,7 +494,6 @@ li {
 }
 
 .logo-object {
-  width: 190px;
   height: 30px;
 }
 
@@ -741,6 +740,11 @@ li {
 
 .footer {
   padding: 58px 0 52px;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 47px 0 46px;
+  }
 }
 @media (max-width: 375px) {
   .footer {
@@ -1027,7 +1031,7 @@ li {
 }
 
 .strategy__content {
-  height: 177px;
+  height: 207px;
   padding: 25px 33px;
   flex-grow: 1;
   display: flex;
@@ -1040,7 +1044,7 @@ li {
 }
 
 .strategy__name {
-  margin: 0 0 29px;
+  margin-bottom: 25px;
   text-align: left;
   flex-grow: 1;
   text-overflow: ellipsis;
@@ -1060,17 +1064,40 @@ li {
 .about-us {
   padding: 66px 0 100px;
 }
+@media (max-width: 768px) {
+  .about-us {
+    padding: 0 0 50px;
+    overflow: hidden;
+  }
+}
 
 .about-us__title {
-  margin: 0 0 14px;
+  margin-bottom: 14px;
+}
+@media (max-width: 768px) {
+  .about-us__title {
+    text-align: center;
+  }
 }
 
 .about-us__description {
-  margin: 0 0 45px;
+  margin-bottom: 45px;
+}
+@media (max-width: 768px) {
+  .about-us__description {
+    text-align: justify;
+    margin-bottom: 37px;
+  }
 }
 
 .employee__container {
   padding-right: 32px;
+}
+@media (max-width: 768px) {
+  .employee__container {
+    display: flex;
+    width: 1200px;
+  }
 }
 
 .employee {
@@ -1121,6 +1148,7 @@ li {
 @media (max-width: 768px) {
   .contact-us {
     text-align: center;
+    padding: 48px 0 50px;
   }
 }
 
@@ -1140,12 +1168,17 @@ li {
 @media (max-width: 768px) {
   .contact-us__content {
     max-width: 100%;
-    margin-bottom: 52px;
+    margin-bottom: 35px;
   }
 }
 
 .contact-us__text {
   margin: 0 0 34px;
+}
+@media (max-width: 768px) {
+  .contact-us__text {
+    margin: 0 0 26px;
+  }
 }
 
 .contact-us__link {
@@ -1211,6 +1244,29 @@ li {
   .contact-us__button {
     margin-top: 24px;
   }
+}
+
+.carousel {
+  display: none;
+}
+@media (max-width: 768px) {
+  .carousel {
+    width: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+}
+
+.carousel__item {
+  margin-top: 33px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #2F281E;
+  border-radius: 50%;
+}
+.carousel__item_active {
+  background-color: #2F281E;
 }
 
 /*# sourceMappingURL=style.css.map */

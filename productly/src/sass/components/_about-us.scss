@@ -2,18 +2,33 @@ $image-gap: 32px;
 
 .about-us {
   padding: 66px 0 100px;
+  @include media-tablet {
+    padding: 0 0 50px;
+    overflow: hidden;
+  }
 }
 
 .about-us__title {
-  margin: 0 0 14px;
+  margin-bottom: 14px;
+  @include media-tablet {
+    text-align: center;
+  }
 }
 
 .about-us__description {
-  margin: 0 0 45px;
+  margin-bottom: 45px;
+  @include media-tablet {
+    text-align: justify;
+    margin-bottom: 37px;
+  }
 }
 
 .employee__container {
   padding-right: $image-gap;
+  @include media-tablet {
+    display: flex;
+    width: $content-width;
+  }
 }
 
 .employee {

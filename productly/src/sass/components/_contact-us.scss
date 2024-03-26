@@ -3,6 +3,7 @@
   padding: 62px 0 82px;
   @include media-tablet {
     text-align: center;
+    padding: 48px 0 50px;
   }
 }
 
@@ -20,12 +21,15 @@
   max-width: 520px;
   @include media-tablet {
     max-width: 100%;
-    margin-bottom: 52px;
+    margin-bottom: 35px;
   }
 }
 
 .contact-us__text {
   margin: 0 0 34px;
+  @include media-tablet {
+    margin: 0 0 26px;
+  }
 }
 
 .contact-us__link {

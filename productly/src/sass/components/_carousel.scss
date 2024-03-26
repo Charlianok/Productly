@@ -1,0 +1,20 @@
+.carousel {
+  display: none;
+  @include media-tablet {
+    width: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+}
+
+.carousel__item {
+  margin-top: 33px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid $color-heading;
+  border-radius: 50%;
+  &_active {
+    background-color: $color-heading;
+  }
+}

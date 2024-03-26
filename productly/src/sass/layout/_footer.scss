@@ -1,5 +1,8 @@
 .footer {
   padding: 58px 0 52px;
+  @include media-tablet {
+    padding: 47px 0 46px;
+  }
   @include media-mobile {
     padding: 31px 0;
   }
