@@ -594,6 +594,7 @@ li {
 .tag {
   border-radius: 90px;
   padding: 0 14px;
+  cursor: pointer;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: normal;
@@ -1020,6 +1021,9 @@ li {
   cursor: pointer;
   display: flex;
   flex-direction: column;
+}
+.strategy_hidden {
+  display: none;
 }
 .strategy:hover .strategy__name {
   color: #FF9900;
